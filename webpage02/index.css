@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap');
+*{
+	margin:0;
+	padding: 0;
+font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url(images/fusion-medical-animation-EAgGqOiDDMg-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.navbar{
+	width: 95%;
+	margin:auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.logo{
+	width: 145px;
+	cursor: pointer;
+}
+.menu-icon{
+	width: 25px;
+	cursor: pointer;
+	position: relative;
+	display: none;
+   
+}
+
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #00bcd4;;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 4px;
+	width: 0;
+	background: #00bcd4;;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.content{
+	width: 100%;
+	position:absolute;;
+	top:50%;
+	transform: translateY(-30%);
+	text-align: center;
+	color:#FF4136;
+}
+.content p{
+	margin:30px auto;
+	font-family:  100:
+	line-height:30px;
+	font-size: 20px;
+
+}
+.content h1{
+	font-size: 60px;
+	margin-top: 80px;
+}
+button{
+	width: 200px;
+	padding:15px 0;
+	text-align: center;
+	margin: 30px 20px;
+	position: relative;
+	border-radius: 25px;
+	font-weight: bold;
+	border:3px solid #009688;
+	color: #FF4136;
+	cursor: pointer;
+	overflow:hidden;
+}
+
+button:hover{
+	color:#3498db;
+	border:none;
+
+}
+button::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #3498db;
+	height: 0%;
+	z-index: -1;
+	transition: 0.5s;
+}
+button::before{
+	top :0;
+	border-radius: 0 0 50% 50%;
+}
+button:hover::before{
+	height: 180%;
+}
+.aboutus{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/donate01.jpg);
+	justify-content: space-between;
+}
+.map{
+	width: 50%;
+	height: 100vh;
+	image-position: right;
+}
+.word{
+	margin:30px auto;
+	font-family:  100;
+
+	text-align: left;
+	color:#40E0D0;
+	transform: translateY(200%);
+	top:30%;
+	text-align: center;
+	margin:30px auto;
+	font-family: 'Itim', cursive;
+	font-size: 20px;
+}
+.donateus{
+	text-align: center;
+	position: relative;
+
+}
+.contact{
+	width: 85%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(images/contactus.jpg);
+	justify-content: space-between;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact .contents{
+	max-width: 800px;
+	text-align: center;
+}
+.contact .contents h2
+{
+	font-style: 36px;
+	font-weight: 500;
+	color: #ffff;
+}
+.contact .contents p
+{
+	font-weight: 300;
+	color: #ffff;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+
+}
+.container .contactinfo 
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactinfo .box
+{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container .contactinfo .box .icon
+{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+.container .contactinfo .box .text
+{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #ffff;
+	flex-direction: column;
+	font-weight: 300;
+}
+.container .contactinfo .box .text h3
+{
+	font-weight: 500;
+	color: #00bcd4;
+}
+.contactform
+{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+	opacity: 0.6;
+
+
+
+}
+.contactform h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+.contactform .inputBox
+{	
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+	
+}
+.contactform .inputBox input
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border:none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.contactform .inputBox td
+{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+
+}
+.contactform .inputBox input:focus ~ td,
+.contactform .inputBox textarea:focus ~ td,
+.contactform .inputBox input:valid ~ td,
+.contactform .inputBox textarea:valid ~ td{
+
+	top:-12px;
+	left: 0;
+	color: #f7497d;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+
+
+
+.contactform .inputBox input[type="submit"]
+{
+	width: 100px;
+	background: #00bcd4;
+	color:#fff;
+	border:none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+@media only screen and (max-width: 700px)
+{
+	
+	.navbar ul  {
+		width: 60%;
+		background: #333;
+		position: absolute;
+		top: 70px;
+		right: 0;
+		z-index: 2;
+		opacity: 0.6;
+
+	}
+
+	.navbar ul li{
+		display: block;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		position: right;
+	}
+
+	.navbar ul li a{
+		color: #ffff;
+	}
+	.menu-icon{
+		display: block;
+	}
+	.map{
+		width: 60%;
+		position: absolute;
+	}
+	.word{
+		margin:10px 10px;
+
+	}
+	.contact
+	{
+
+		padding: 160px 35px;
+	}
+	.container
+	{
+
+		flex-direction: column;
+	}
+	.contactform{
+		padding: 0px 15px;
+	}
+
+}
